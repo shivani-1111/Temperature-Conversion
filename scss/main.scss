@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flexContainer {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    display: grid;
+    place-items: center;
+}
+
+body {
+    @include flexContainer;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#tempCal {
+    background: black;
+    // padding: 4rem;
+}
+
+label {
+    font-size: 24px;
+    color: #9a9aff;
+    // color: aliceblue;
+}
+
+.convert {
+    background: aliceblue;
+    padding: 8px 24px;
+    border: none;
+    color: darkblue;
+    box-shadow: 2px 2px 0px #ccd3ff;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px lightslategrey;
+    margin-bottom: 23px;
+     :hover {
+        background: darkblue;
+        color: aliceblue;
+    }
+}
+
+#temp_diff {
+    font-size: 20px;
+}
+
+#temp {
+    padding-left: 8px;
+    font-size: 20px;
+    width: 5rem;
+}
+
+#resulttemp {
+    color: greenyellow;
+    font-size: 20px;
+}
